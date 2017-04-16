@@ -2,8 +2,6 @@
   copy:
     src: /tmp/xsos
     dest: /usr/local/bin/xsos
-    owner: chip
-    group: chip
     mode: 0755
 
 - name: "Run xsos"
