@@ -1,0 +1,12 @@
+---
+- hosts: control
+  roles:
+  - control
+
+- hosts: servers
+  roles:
+  - servers
+
+- hosts: control
+  roles:
+  - cleanup

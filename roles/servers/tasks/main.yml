@@ -1,0 +1,25 @@
+- name: "Copy xsos to server"
+  copy:
+    src: /tmp/xsos
+    dest: /usr/local/bin/xsos
+    owner: chip
+    group: chip
+    mode: 0755
+
+- name: "Run xsos"
+  shell: /usr/local/bin/xsos -a > /tmp/xsosreport
+
+- name: "Get report"
+  fetch:
+    src: /tmp/xsosreport
+    dest: /tmp/fetched
+
+- name: "Clean up report"
+  file:
+    state: absent
+    path: /tmp/xsosreport
+
+- name: "Clean up xsos"
+  file:
+    state: absent
+    path: /usr/local/bin/xsos

@@ -1,0 +1,4 @@
+- name: "Get the xsos binary"
+  get_url:
+    url: http://bit.ly/xsos-direct
+    dest: /tmp/xsos

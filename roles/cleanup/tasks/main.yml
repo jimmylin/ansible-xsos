@@ -1,0 +1,4 @@
+- name: "Clean up xsos"
+  file:
+    state: absent
+    path: /tmp/xsos
