@@ -1,5 +1,5 @@
 # ansible-xsos
-Ansible playbook to run xsos on a set of servers
+Ansible playbook to run xsos(<https://github.com/ryran/xsos>) on a set of servers
 
 Get Started
 1. Clone this repository
